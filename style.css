@@ -1,18 +1,17 @@
 @font-face{
     font-family: 'Figtree';
     src: url(assets/fonts/static/Figtree-Medium.ttf);
-    src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+    /* src: url(assets/fonts/static/Figtree-ExtraBold.ttf); */
 }
 
 :root {
-    --fuenteTexto: "Figtree", sans-serif;
+    --fuenteTexto: 'Figtree', sans-serif;
 
     --yellow: hsl(47, 88%, 63%);
     --white: hsl(0, 0%, 100%);
     --gray-500: hsl(0, 0%, 42%);
     --gray-950: hsl(0, 0%, 7%);
 }
-
 
 *{
 	margin: 0;
@@ -23,6 +22,11 @@
 	outline: none;
 }
 
+body {
+    font-family: var(--fuenteTexto);
+    background-color: var(--yellow);
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -30,4 +34,25 @@
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: var(--white);
+    max-width: 320px;
+    border-radius: 20px;
+    justify-items: center;
+    padding: 20px 0;
+    border: thin solid red;
+}
+
+.container img {
+    max-width: 280px;
+    border-radius: 10px;
 }
